@@ -1,0 +1,536 @@
+@font-face {
+    font-family: 'East Gates Personal Use';
+    src: url('fonts/EastGatesPersonalUse.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Skandal';
+    src: url('fonts/Skandal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/Faberge-Regular.otf') format('opentype'),
+         url('fonts/ZenKurenaido-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Faberge-Regular';
+    src: url('fonts/Faberge-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zen Kurenaido';
+    src: url('fonts/ZenKurenaido-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+    background-color: #130716;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+.main-header {
+    background-color: #090010;
+    height: 4.375rem; 
+    display: flex;
+    align-items: center;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 2.5rem; 
+}
+
+header nav {
+    display: flex;
+    gap: 2.5rem; 
+}
+
+.nav-item {
+    font-family: 'Skandal', sans-serif;
+    font-size: 1.5rem; 
+    color: #A384B8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding-bottom: 0.3125rem; 
+    border-bottom: 0.125rem solid transparent; 
+}
+
+.nav-item:hover {
+    color: #EBCDFF;
+    border-bottom: 0.125rem solid #EBCDFF;
+}
+
+.nav-item:active {
+    color: #4F4358;
+    border-bottom: 0.125rem solid transparent;
+}
+
+.nav-item.active {
+    color: #EBCDFF;
+    border-bottom: 0.125rem solid #EBCDFF;
+}
+
+
+.hero {
+    background: linear-gradient(180deg, rgba(64, 28, 91, 1) 0%, rgba(19, 7, 22, 1) 100%);
+    padding: 0;
+    min-height: 100vh;
+    padding-top: 13.4375rem; 
+}
+
+.hero h1 {
+    font-family: 'East Gates Personal Use', 'MyCustomFont', sans-serif;
+    font-size: clamp(3rem, 15vw, 14.375rem); 
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    animation: softGlow 3s ease-in-out infinite;
+}
+
+.hero-images {
+    text-align: center;
+    margin-top: 0.625rem; 
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.about {
+    padding-top: 5.625rem; 
+}
+
+.about .container {
+    max-width: 70.625rem; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem; 
+    align-items: flex-start;
+}
+
+.about-image {
+    flex: 0 0 70%;
+    min-width: 17.5rem; 
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.about-img:hover {
+    transform: scale(1.01);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 17.5rem; 
+}
+
+.about-title {
+    font-family: 'Skandal', sans-serif;
+    font-size: 2.25rem; 
+    font-weight: normal;
+    color: #FFFFFF;
+    margin: 0 0 1.875rem 0; 
+    text-align: left;
+    line-height: 1;
+}
+
+.about-item h3 {
+    font-family: 'Faberge', 'MyCustomFont', sans-serif;
+    font-size: 1.4375rem; 
+    font-weight: normal;
+    color: #B2B2B2;
+    line-height: 1.375rem; 
+    margin-bottom: 1.5625rem; 
+    margin-top: 0;
+}
+
+.about-item p {
+    font-family: 'Zen Kurenaido', 'MyCustomFont', sans-serif;
+    font-size: 1.5rem; 
+    font-weight: normal;
+    color: #B2B2B2;
+    line-height: 1.25rem; 
+    margin-bottom: 1.5625rem; 
+}
+
+
+.quote {
+    margin-top: 9.375rem; 
+    background-color: #23102D;
+    width: 100%;
+    min-height: 16.875rem; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.quote .container {
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2.5rem 0; 
+}
+
+.quote-content {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quote-text {
+    font-family: 'East Gates Personal Use', 'MyCustomFont', sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem); 
+    font-weight: normal;
+    color: #FFFFFF;
+    line-height: clamp(2.5rem, 6vw, 4.375rem); 
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    word-break: break-word;
+    animation: quoteGlow 4s ease-in-out infinite;
+}
+
+.quote-text .second-line {
+    display: block;
+    margin-left: 20rem; 
+}
+
+
+.gallery {
+    padding-top: 9.375rem; 
+}
+
+.gallery .container {
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8.4375rem; 
+}
+
+.gallery-left {
+    flex: 1;
+    min-width: 17.5rem; 
+    margin-top: 7.3125rem; 
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-right {
+    flex: 1;
+    min-width: 17.5rem; 
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-title {
+    font-family: 'Skandal', sans-serif;
+    font-size: 2.25rem; 
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0 0 2.5rem 0; 
+    line-height: 1;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1.875rem; 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-img-margin {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 13.75rem; 
+    margin-bottom: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img-margin:hover {
+    transform: scale(1.05);
+}
+
+.gallery-right .gallery-img-margin {
+    margin-top: 5rem; 
+    margin-bottom: 1.875rem; 
+}
+
+.gallery-text {
+    font-family: 'Zen Kurenaido', 'MyCustomFont', sans-serif;
+    font-size: 1.5rem; 
+    font-weight: normal;
+    color: #B2B2B2;
+    line-height: 1.25rem; 
+    margin: 0 0 1.875rem 0; 
+}
+
+.gallery-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 34.6875rem; 
+    height: 7.1875rem; 
+    font-family: 'Faberge', 'MyCustomFont', sans-serif;
+    font-size: 2rem; 
+    font-weight: normal;
+    color: #A3A3A3;
+    background: transparent;
+    border: 0.1875rem solid #A3A3A3; 
+    border-radius: 1.75rem; 
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.gallery-btn:hover {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.gallery-btn:active {
+    color: #684F6E;
+    border-color: #684F6E;
+}
+
+
+.booking {
+    padding-top: 9.375rem; 
+    padding-bottom: 9.375rem; 
+}
+
+.booking .container {
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.booking-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.booking-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 2rem; 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+.booking-btn {
+    font-family: 'Skandal', sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem); 
+    font-weight: normal;
+    color: #B2B2B2;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.booking-btn:hover {
+    color: #FFFFFF;
+}
+
+.booking-btn:active {
+    color: #9E84AD;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+.footer {
+    background-color: #23102D;
+    width: 100%;
+    min-height: 20rem; 
+    border-top-left-radius: 5rem; 
+    border-top-right-radius: 5rem; 
+    display: flex;
+    align-items: center;
+}
+
+.footer .container {
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3.125rem 0; 
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.25rem; 
+}
+
+.footer-block {
+    flex: 1;
+    min-width: 17.5rem; 
+    max-width: 27.5rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem; 
+}
+
+.footer-link {
+    font-family: 'Zen Kurenaido', 'MyCustomFont', sans-serif;
+    font-size: 1.125rem; 
+    font-weight: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    line-height: 1.3;
+    width: fit-content;
+}
+
+.footer-text {
+    font-family: 'Zen Kurenaido', 'MyCustomFont', sans-serif;
+    font-size: 1.125rem; 
+    font-weight: normal;
+    color: #FFFFFF;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-link:active {
+    text-decoration: none;
+    color: #FEC0FF;
+}
+
+
+@keyframes softGlow {
+    0% {
+        text-shadow: 0 0 0.3125rem rgba(163, 132, 184, 0.3); 
+    }
+    50% {
+        text-shadow: 0 0 1.25rem rgba(163, 132, 184, 0.7), 
+                     0 0 1.875rem rgba(255, 255, 255, 0.5); 
+    }
+    100% {
+        text-shadow: 0 0 0.3125rem rgba(163, 132, 184, 0.3); 
+    }
+}
+
+@keyframes quoteGlow {
+    0% {
+        text-shadow: 0 0 0.1875rem rgba(163, 132, 184, 0.3); 
+        opacity: 0.95;
+    }
+    50% {
+        text-shadow: 0 0 0.9375rem rgba(163, 132, 184, 0.8), 
+                     0 0 1.5625rem rgba(255, 255, 255, 0.4); 
+        opacity: 1;
+    }
+    100% {
+        text-shadow: 0 0 0.1875rem rgba(163, 132, 184, 0.3); 
+        opacity: 0.95;
+    }
+}
+
