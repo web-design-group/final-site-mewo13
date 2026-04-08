@@ -1,2 +1,1 @@
-# final-site-mewo13
-final-site-mewo13 created by GitHub Classroom
+Трусова Ксения Александровна, 4-МВ-4, 2025
